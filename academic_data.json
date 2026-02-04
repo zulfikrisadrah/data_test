@@ -3,6 +3,7 @@
         "id": "cs101",
         "name": "Pengantar Pemrograman",
         "sks": 4,
+        "semester": 1,
         "reviewPdfPath": "assets/modules/peng_pemrograman_modul_full.pdf",
         "preTestQuestions": [
             {
@@ -847,6 +848,7 @@
         "id": "cs102",
         "name": "Basis Data",
         "sks": 4,
+        "semester": 1,
         "reviewPdfPath": "assets/modules/peng_pemrograman_modul_full.pdf",
         "preTestQuestions": [
             {
@@ -1377,6 +1379,1696 @@
             },
             {
                 "id": "cs102_4",
+                "title": "Module 4: Functions & Recursion",
+                "pdfPath": "assets/modules/peng_pemrograman_modul_4.pdf",
+                "content": "# Functions & Recursion\nModularisasi kode untuk digunakan kembali.\n\n### Definisi Fungsi\n```python\ndef sapa(nama):\n    print('Halo ' + nama)\n```\n\n### Parameter\n- Wajib: Harus diisi.\n- Opsional: Punya default value.\n\n### Rekursi\nFungsi memanggil dirinya sendiri.",
+                "quizQuestions": [
+                    {
+                        "question": "Keyword untuk membuat fungsi adalah...",
+                        "options": [
+                            "function",
+                            "def",
+                            "func",
+                            "define"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa itu return value?",
+                        "options": [
+                            "Nilai input",
+                            "Nilai yang dikembalikan fungsi setelah selesai",
+                            "Nama fungsi",
+                            "Error message"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Contoh pendefinisian fungsi dengan parameter opsional...",
+                        "options": [
+                            "def f(x):",
+                            "def f(x=10):",
+                            "def f: x=10",
+                            "def f() -> 10:"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa risiko utama dari rekursi tanpa 'base case'?",
+                        "options": [
+                            "Program jadi cantik",
+                            "RecursionError (Stack Overflow)",
+                            "Hardware rusak",
+                            "Data hilang"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Variabel yang di buat di dalam fungsi disebut variabel...",
+                        "options": [
+                            "Global",
+                            "Lokal",
+                            "Umum",
+                            "Static"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Bagaimana memanggil fungsi 'hitung' tanpa argumen?",
+                        "options": [
+                            "hitung",
+                            "call hitung",
+                            "hitung()",
+                            "execute hitung"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Fungsi yang tidak punya nama disebut...",
+                        "options": [
+                            "Null function",
+                            "Lambda function",
+                            "Ghost function",
+                            "Void function"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa itu Docstring?",
+                        "options": [
+                            "Tipe data baru",
+                            "String dokumentasi di dalam fungsi",
+                            "Error string",
+                            "String panjang"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Berapa banyak 'return' yang bisa dieksekusi dalam satu panggilan fungsi?",
+                        "options": [
+                            "Banyak",
+                            "Hanya satu (yang pertama ditemui)",
+                            "Tidak terbatas",
+                            "Nol"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Scope variabel global adalah...",
+                        "options": [
+                            "Hanya di dalam fungsi",
+                            "Hanya di luar fungsi",
+                            "Tersedia di mana saja dalam modul",
+                            "Hanya di loop"
+                        ],
+                        "correctOptionIndex": 2
+                    }
+                ]
+            }
+        ],
+        "finalExamQuestions": [
+            {
+                "question": "Bahasa Python sangat menekankan pada...",
+                "options": [
+                    "Kecepatan eksekusi",
+                    "Keterbacaan kode (readability)",
+                    "Penggunaan memory yang besar",
+                    "Kerahasiaan source code"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Tipe data hasil dari input() selalu...",
+                "options": [
+                    "int",
+                    "float",
+                    "str",
+                    "bool"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Operator exponentiation (pangkat) adalah...",
+                "options": [
+                    "^",
+                    "**",
+                    "//",
+                    "pow"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Mana yang merupakan cara mendefinisikan list kosong?",
+                "options": [
+                    "x = []",
+                    "x = {}",
+                    "x = ()",
+                    "x = list()"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Apa output dari bool(0)?",
+                "options": [
+                    "True",
+                    "False",
+                    "None",
+                    "Error"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Kondisi 'if a > 0 and b < 0' akan bernilai True jika...",
+                "options": [
+                    "Keduanya benar",
+                    "Salah satu benar",
+                    "Salah satu salah",
+                    "Keduanya salah"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Guna dari keyword 'pass' adalah...",
+                "options": [
+                    "Mengakhiri program",
+                    "Placeholder (tidak melakukan apa-apa)",
+                    "Melewati loop",
+                    "Keluar fungsi"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Cara mengevaluasi ekspresi dalam string adalah menggunakan fungsi...",
+                "options": [
+                    "eval()",
+                    "exec()",
+                    "parse()",
+                    "check()"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Urutan eksekusi percabangan yang benar adalah...",
+                "options": [
+                    "else - elif - if",
+                    "if - else - elif",
+                    "if - elif - else",
+                    "elif - if - else"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Ekspresi shorthand 'a if condition else b' disebut...",
+                "options": [
+                    "Ternary operator",
+                    "Binary operator",
+                    "Unary operator",
+                    "Bitwise operator"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Infinite loop terjadi karena...",
+                "options": [
+                    "PC terlalu canggih",
+                    "Kondisi pemberhentian tidak pernah tercapai",
+                    "List terlalu panjang",
+                    "Memory penuh"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Loop 'for i in range(10, 0, -2)' akan mencetak...",
+                "options": [
+                    "10, 8, 6, 4, 2",
+                    "10, 9, 8, 7",
+                    "0, 2, 4, 6, 8, 10",
+                    "10, 0, -2"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Apakah tuple bisa diubah setelah dibuat (mutable)?",
+                "options": [
+                    "Ya",
+                    "Tidak",
+                    "Tergantung hardware",
+                    "Hanya jika kosong"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Keyword 'while' menjalankan blok kode selama kondisi...",
+                "options": [
+                    "False",
+                    "True",
+                    "Ada Error",
+                    "Satu baris"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Try-Except-Finally. Blok yang pasti dieksekusi adalah...",
+                "options": [
+                    "Try",
+                    "Except",
+                    "Finally",
+                    "None"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Argumen yang diberikan saat memanggil fungsi disebut...",
+                "options": [
+                    "Parameter",
+                    "Variabel",
+                    "Argumen",
+                    "Properti"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Default parameter harus diletakkan di...",
+                "options": [
+                    "Kiri parameter wajib",
+                    "Kanan parameter wajib",
+                    "Mana saja",
+                    "Tidak boleh ada"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Bagaimana cara mengakses variabel global di dalam fungsi jika ingin mengubahnya?",
+                "options": [
+                    "Gunakan keyword 'global'",
+                    "Langsung saja",
+                    "Tidak bisa",
+                    "Copy paste"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Hasil dari fungsi tanpa return adalah...",
+                "options": [
+                    "0",
+                    "None",
+                    "Error",
+                    "Empty string"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Fungsi rekursif harus memiliki...",
+                "options": [
+                    "Minimal 10 baris",
+                    "Base case (kondisi berhenti)",
+                    "Looping for",
+                    "Tipe data float"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "cs2101",
+        "name": "Pengantar Pemrograman (Lanjutan)",
+        "semester": 2,
+        "sks": 4,
+        "reviewPdfPath": "assets/modules/peng_pemrograman_modul_full.pdf",
+        "preTestQuestions": [
+            {
+                "question": "Apa fungsi utama dari interpreter Python?",
+                "options": [
+                    "Mengompilasi kode jadi file .exe",
+                    "Menjalankan kode baris demi baris",
+                    "Mempercepat hardware",
+                    "Menghapus virus"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Manakah cara penulisan variabel yang benar di Python?",
+                "options": [
+                    "var x = 5",
+                    "int x = 5",
+                    "x = 5",
+                    "$x = 5"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Tipe data untuk menyimpan angka desimal adalah...",
+                "options": [
+                    "int",
+                    "float",
+                    "String",
+                    "bool"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Simbol '#' di Python digunakan untuk...",
+                "options": [
+                    "Header",
+                    "Komentar",
+                    "Import",
+                    "Loop"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Apa output dari print(type(10))?",
+                "options": [
+                    "<class 'str'>",
+                    "<class 'int'>",
+                    "<class 'float'>",
+                    "10"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Operator perbandingan untuk 'tidak sama dengan' adalah...",
+                "options": [
+                    "==",
+                    "=>",
+                    "!=",
+                    "<>"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Apa hasil dari 10 > 5 and 3 < 1?",
+                "options": [
+                    "True",
+                    "False",
+                    "None",
+                    "Error"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Struktur if-elif-else digunakan untuk...",
+                "options": [
+                    "Satu kondisi saja",
+                    "Banyak kondisi alternatif",
+                    "Perulangan",
+                    "Menghapus data"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Keyword apa yang digunakan di akhir 'match case' sebagai default?",
+                "options": [
+                    "else",
+                    "default",
+                    "case _",
+                    "break"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Apa kegunaan indentasi pada struktur if?",
+                "options": [
+                    "Hiasan",
+                    "Menentukan blok kode",
+                    "Mempercepat program",
+                    "Opsional"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Fungsi range(5) akan menghasilkan urutan angka...",
+                "options": [
+                    "1, 2, 3, 4, 5",
+                    "0, 1, 2, 3, 4, 5",
+                    "0, 1, 2, 3, 4",
+                    "1, 3, 5"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Keyword untuk menghentikan loop secara paksa adalah...",
+                "options": [
+                    "stop",
+                    "exit",
+                    "break",
+                    "continue"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Apa bedanya while loop dengan for loop?",
+                "options": [
+                    "While berdasarkan kondisi, For biasanya koleksi/range",
+                    "For lebih cepat",
+                    "While hanya untuk angka",
+                    "Tidak ada bedanya"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Try-Except digunakan untuk...",
+                "options": [
+                    "Membuat loop",
+                    "Menangani error/exception",
+                    "Mendeklarasikan fungsi",
+                    "Mempercepat eksekusi"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Keyword 'continue' berfungsi untuk...",
+                "options": [
+                    "Berhenti total",
+                    "Lanjut ke iterasi berikutnya",
+                    "Keluar dari fungsi",
+                    "Mencetak data"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Keyword untuk mendefinisikan fungsi adalah...",
+                "options": [
+                    "function",
+                    "def",
+                    "func",
+                    "define"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Apa itu parameter opsional (default parameter)?",
+                "options": [
+                    "Parameter yang wajib diisi",
+                    "Parameter yang punya nilai awal jika tidak diisi",
+                    "Parameter untuk loop",
+                    "Parameter rahasia"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Bagaimana cara memanggil fungsi bernama 'halo'?",
+                "options": [
+                    "halo",
+                    "call halo",
+                    "halo()",
+                    "def halo"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Keyword untuk mengembalikan nilai dari fungsi adalah...",
+                "options": [
+                    "back",
+                    "give",
+                    "result",
+                    "return"
+                ],
+                "correctOptionIndex": 3
+            },
+            {
+                "question": "Apa yang dimaksud dengan Rekursi?",
+                "options": [
+                    "Fungsi yang memanggil fungsi lain",
+                    "Fungsi yang memanggil dirinya sendiri",
+                    "Loop yang tidak berhenti",
+                    "Parameter yang salah"
+                ],
+                "correctOptionIndex": 1
+            }
+        ],
+        "subChapters": [
+            {
+                "id": "cs2101_1",
+                "title": "Module 1: Intro to Python",
+                "pdfPath": "assets/modules/peng_pemrograman_modul_1.pdf",
+                "content": "# Intro to Python\nPython adalah bahasa pemrograman populer yang mudah dipelajari. Fokus pada readability.\n\n### Variabel & Tipe Data\n- `int`: Angka bulat\n- `float`: Angka desimal\n- `str`: Teks\n- `bool`: True/False\n\n### Input & Output\n- `print()`: Menampilkan data\n- `input()`: Mengambil data dari user",
+                "quizQuestions": [
+                    {
+                        "question": "Tipe data mana yang digunakan untuk teks 'Halo Dunia'?",
+                        "options": [
+                            "int",
+                            "float",
+                            "str",
+                            "bool"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Bagaimana variabel dideklarasikan di Python?",
+                        "options": [
+                            "Variable x = 1",
+                            "x = 1",
+                            "int x = 1",
+                            "def x = 1"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Output dari print(2 * 3) adalah...",
+                        "options": [
+                            "5",
+                            "6",
+                            "23",
+                            "Error"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Fungsi untuk menerima input teks adalah...",
+                        "options": [
+                            "get()",
+                            "scan()",
+                            "input()",
+                            "read()"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Keyword Python untuk nilai kebenaran adalah...",
+                        "options": [
+                            "true/false",
+                            "True/False",
+                            "Yes/No",
+                            "1/0"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Operator % (modulo) digunakan untuk...",
+                        "options": [
+                            "Persentase",
+                            "Sisa bagi",
+                            "Perkalian",
+                            "Pembagian bulat"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Mana yang merupakan identifier yang valid?",
+                        "options": [
+                            "2_data",
+                            "data-2",
+                            "_data2",
+                            "data 2"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Simbol pembagian yang menghasilkan float adalah...",
+                        "options": [
+                            "/",
+                            "//",
+                            "%",
+                            "\\"
+                        ],
+                        "correctOptionIndex": 0
+                    },
+                    {
+                        "question": "Hasil dari print(int(3.7)) adalah...",
+                        "options": [
+                            "3",
+                            "4",
+                            "3.7",
+                            "Error"
+                        ],
+                        "correctOptionIndex": 0
+                    },
+                    {
+                        "question": "Python dikembangkan oleh...",
+                        "options": [
+                            "Steve Jobs",
+                            "Guido van Rossum",
+                            "Bill Gates",
+                            "Mark Zuckerberg"
+                        ],
+                        "correctOptionIndex": 1
+                    }
+                ]
+            },
+            {
+                "id": "cs2101_2",
+                "title": "Module 2: Conditional Statement",
+                "pdfPath": "assets/modules/peng_pemrograman_modul_2.pdf",
+                "content": "# Conditional Statement\nKontrol alur program berdasarkan kondisi.\n\n### If-Else\n```python\nif x > 10:\n    print('Besar')\nelse:\n    print('Kecil')\n```\n\n### Match Case (Python 3.10+)\nMirip switch-case di bahasa lain.",
+                "quizQuestions": [
+                    {
+                        "question": "Operator untuk mengecek kesamaan nilai adalah...",
+                        "options": [
+                            "=",
+                            "==",
+                            "is",
+                            "!="
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Keyword untuk kondisi alternatif setelah 'if' adalah...",
+                        "options": [
+                            "else if",
+                            "elif",
+                            "elsif",
+                            "other"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa hasil dari not (5 == 5)?",
+                        "options": [
+                            "True",
+                            "False",
+                            "None",
+                            "Error"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Indentasi di bawah 'if' menandakan...",
+                        "options": [
+                            "Header",
+                            "Blok kode yang dijalankan jika True",
+                            "Komentar",
+                            "Instruksi selanjutnya"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Manakah operator logika di Python?",
+                        "options": [
+                            "&&",
+                            "||",
+                            "and",
+                            "xor"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Output dari print(10 > 5 or 5 > 10)?",
+                        "options": [
+                            "True",
+                            "False",
+                            "None",
+                            "Error"
+                        ],
+                        "correctOptionIndex": 0
+                    },
+                    {
+                        "question": "Struktur 'match case' diperkenalkan pada versi Python...",
+                        "options": [
+                            "2.7",
+                            "3.6",
+                            "3.10",
+                            "3.8"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Apa gunanya keyword 'else'?",
+                        "options": [
+                            "Kondisi utama",
+                            "Dijalankan jika if/elif bernilai False",
+                            "Mengulang kode",
+                            "Mengakhiri program"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Simbol akhir pada baris 'if x > 5' adalah...",
+                        "options": [
+                            ";",
+                            ".",
+                            ":",
+                            "{"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Jika x = 7, apa hasil dari: if x < 5: print('A') elif x < 10: print('B') else: print('C')?",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "None"
+                        ],
+                        "correctOptionIndex": 1
+                    }
+                ]
+            },
+            {
+                "id": "cs2101_3",
+                "title": "Module 3: Looping & Exceptions",
+                "pdfPath": "assets/modules/peng_pemrograman_modul_3.pdf",
+                "content": "# Looping & Exceptions\nMelakukan tugas berulang dan menangani error.\n\n### For & While\n- `for`: Iterasi pada koleksi/range.\n- `while`: Selama kondisi True.\n\n### Keywords\n- `break`: Berhenti paksa.\n- `continue`: Lewati sisa loop saat ini.\n\n### Try-Except\nMenghindari program crash saat error.",
+                "quizQuestions": [
+                    {
+                        "question": "Fungsi range(2, 5) menghasilkan...",
+                        "options": [
+                            "2, 3, 4, 5",
+                            "2, 3, 4",
+                            "2, 4",
+                            "0, 1, 2, 3, 4"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa yang terjadi jika kondisi while selalu True?",
+                        "options": [
+                            "Error",
+                            "Loop berhenti sendiri",
+                            "Infinite loop (loop selamanya)",
+                            "Program melambat"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Keyword untuk menangkap error agar program tidak crash adalah...",
+                        "options": [
+                            "catch",
+                            "try",
+                            "except",
+                            "error"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Nested loop adalah...",
+                        "options": [
+                            "Loop yang sangat cepat",
+                            "Loop di dalam loop",
+                            "Loop yang salah",
+                            "Loop tanpa akhir"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Output dari: for i in range(3): print(i, end='')?",
+                        "options": [
+                            "012",
+                            "123",
+                            "0123",
+                            "333"
+                        ],
+                        "correctOptionIndex": 0
+                    },
+                    {
+                        "question": "Kapan blok 'finally' pada try-except dijalankan?",
+                        "options": [
+                            "Hanya jika ada error",
+                            "Hanya jika tidak ada error",
+                            "Selalu dijalankan",
+                            "Tidak pernah"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Manakah cara menghentikan loop?",
+                        "options": [
+                            "exit",
+                            "stop",
+                            "break",
+                            "return"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Continue digunakan untuk...",
+                        "options": [
+                            "Selesai loop",
+                            "Pindah ke iterasi berikutnya",
+                            "Keluar fungsi",
+                            "Mencetak log"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "While x < 5: x += 1. Jika x mulai dari 0, berapa kali loop berjalan?",
+                        "options": [
+                            "4 kali",
+                            "5 kali",
+                            "6 kali",
+                            "Selamanya"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Exception 'ValueError' biasanya terjadi saat...",
+                        "options": [
+                            "Salah nama variabel",
+                            "Tipe data tidak sesuai saat konversi",
+                            "Loop terlalu lama",
+                            "File tidak ada"
+                        ],
+                        "correctOptionIndex": 1
+                    }
+                ]
+            },
+            {
+                "id": "cs2101_4",
+                "title": "Module 4: Functions & Recursion",
+                "pdfPath": "assets/modules/peng_pemrograman_modul_4.pdf",
+                "content": "# Functions & Recursion\nModularisasi kode untuk digunakan kembali.\n\n### Definisi Fungsi\n```python\ndef sapa(nama):\n    print('Halo ' + nama)\n```\n\n### Parameter\n- Wajib: Harus diisi.\n- Opsional: Punya default value.\n\n### Rekursi\nFungsi memanggil dirinya sendiri.",
+                "quizQuestions": [
+                    {
+                        "question": "Keyword untuk membuat fungsi adalah...",
+                        "options": [
+                            "function",
+                            "def",
+                            "func",
+                            "define"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa itu return value?",
+                        "options": [
+                            "Nilai input",
+                            "Nilai yang dikembalikan fungsi setelah selesai",
+                            "Nama fungsi",
+                            "Error message"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Contoh pendefinisian fungsi dengan parameter opsional...",
+                        "options": [
+                            "def f(x):",
+                            "def f(x=10):",
+                            "def f: x=10",
+                            "def f() -> 10:"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa risiko utama dari rekursi tanpa 'base case'?",
+                        "options": [
+                            "Program jadi cantik",
+                            "RecursionError (Stack Overflow)",
+                            "Hardware rusak",
+                            "Data hilang"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Variabel yang di buat di dalam fungsi disebut variabel...",
+                        "options": [
+                            "Global",
+                            "Lokal",
+                            "Umum",
+                            "Static"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Bagaimana memanggil fungsi 'hitung' tanpa argumen?",
+                        "options": [
+                            "hitung",
+                            "call hitung",
+                            "hitung()",
+                            "execute hitung"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Fungsi yang tidak punya nama disebut...",
+                        "options": [
+                            "Null function",
+                            "Lambda function",
+                            "Ghost function",
+                            "Void function"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa itu Docstring?",
+                        "options": [
+                            "Tipe data baru",
+                            "String dokumentasi di dalam fungsi",
+                            "Error string",
+                            "String panjang"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Berapa banyak 'return' yang bisa dieksekusi dalam satu panggilan fungsi?",
+                        "options": [
+                            "Banyak",
+                            "Hanya satu (yang pertama ditemui)",
+                            "Tidak terbatas",
+                            "Nol"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Scope variabel global adalah...",
+                        "options": [
+                            "Hanya di dalam fungsi",
+                            "Hanya di luar fungsi",
+                            "Tersedia di mana saja dalam modul",
+                            "Hanya di loop"
+                        ],
+                        "correctOptionIndex": 2
+                    }
+                ]
+            }
+        ],
+        "finalExamQuestions": [
+            {
+                "question": "Bahasa Python sangat menekankan pada...",
+                "options": [
+                    "Kecepatan eksekusi",
+                    "Keterbacaan kode (readability)",
+                    "Penggunaan memory yang besar",
+                    "Kerahasiaan source code"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Tipe data hasil dari input() selalu...",
+                "options": [
+                    "int",
+                    "float",
+                    "str",
+                    "bool"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Operator exponentiation (pangkat) adalah...",
+                "options": [
+                    "^",
+                    "**",
+                    "//",
+                    "pow"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Mana yang merupakan cara mendefinisikan list kosong?",
+                "options": [
+                    "x = []",
+                    "x = {}",
+                    "x = ()",
+                    "x = list()"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Apa output dari bool(0)?",
+                "options": [
+                    "True",
+                    "False",
+                    "None",
+                    "Error"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Kondisi 'if a > 0 and b < 0' akan bernilai True jika...",
+                "options": [
+                    "Keduanya benar",
+                    "Salah satu benar",
+                    "Salah satu salah",
+                    "Keduanya salah"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Guna dari keyword 'pass' adalah...",
+                "options": [
+                    "Mengakhiri program",
+                    "Placeholder (tidak melakukan apa-apa)",
+                    "Melewati loop",
+                    "Keluar fungsi"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Cara mengevaluasi ekspresi dalam string adalah menggunakan fungsi...",
+                "options": [
+                    "eval()",
+                    "exec()",
+                    "parse()",
+                    "check()"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Urutan eksekusi percabangan yang benar adalah...",
+                "options": [
+                    "else - elif - if",
+                    "if - else - elif",
+                    "if - elif - else",
+                    "elif - if - else"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Ekspresi shorthand 'a if condition else b' disebut...",
+                "options": [
+                    "Ternary operator",
+                    "Binary operator",
+                    "Unary operator",
+                    "Bitwise operator"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Infinite loop terjadi karena...",
+                "options": [
+                    "PC terlalu canggih",
+                    "Kondisi pemberhentian tidak pernah tercapai",
+                    "List terlalu panjang",
+                    "Memory penuh"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Loop 'for i in range(10, 0, -2)' akan mencetak...",
+                "options": [
+                    "10, 8, 6, 4, 2",
+                    "10, 9, 8, 7",
+                    "0, 2, 4, 6, 8, 10",
+                    "10, 0, -2"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Apakah tuple bisa diubah setelah dibuat (mutable)?",
+                "options": [
+                    "Ya",
+                    "Tidak",
+                    "Tergantung hardware",
+                    "Hanya jika kosong"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Keyword 'while' menjalankan blok kode selama kondisi...",
+                "options": [
+                    "False",
+                    "True",
+                    "Ada Error",
+                    "Satu baris"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Try-Except-Finally. Blok yang pasti dieksekusi adalah...",
+                "options": [
+                    "Try",
+                    "Except",
+                    "Finally",
+                    "None"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Argumen yang diberikan saat memanggil fungsi disebut...",
+                "options": [
+                    "Parameter",
+                    "Variabel",
+                    "Argumen",
+                    "Properti"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Default parameter harus diletakkan di...",
+                "options": [
+                    "Kiri parameter wajib",
+                    "Kanan parameter wajib",
+                    "Mana saja",
+                    "Tidak boleh ada"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Bagaimana cara mengakses variabel global di dalam fungsi jika ingin mengubahnya?",
+                "options": [
+                    "Gunakan keyword 'global'",
+                    "Langsung saja",
+                    "Tidak bisa",
+                    "Copy paste"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Hasil dari fungsi tanpa return adalah...",
+                "options": [
+                    "0",
+                    "None",
+                    "Error",
+                    "Empty string"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Fungsi rekursif harus memiliki...",
+                "options": [
+                    "Minimal 10 baris",
+                    "Base case (kondisi berhenti)",
+                    "Looping for",
+                    "Tipe data float"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "cs2102",
+        "name": "Basis Data (Lanjutan)",
+        "semester": 2,
+        "sks": 4,
+        "reviewPdfPath": "assets/modules/peng_pemrograman_modul_full.pdf",
+        "preTestQuestions": [
+            {
+                "question": "Apa fungsi utama dari interpreter Python?",
+                "options": [
+                    "Mengompilasi kode jadi file .exe",
+                    "Menjalankan kode baris demi baris",
+                    "Mempercepat hardware",
+                    "Menghapus virus"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Manakah cara penulisan variabel yang benar di Python?",
+                "options": [
+                    "var x = 5",
+                    "int x = 5",
+                    "x = 5",
+                    "$x = 5"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Tipe data untuk menyimpan angka desimal adalah...",
+                "options": [
+                    "int",
+                    "float",
+                    "String",
+                    "bool"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Simbol '#' di Python digunakan untuk...",
+                "options": [
+                    "Header",
+                    "Komentar",
+                    "Import",
+                    "Loop"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Apa output dari print(type(10))?",
+                "options": [
+                    "<class 'str'>",
+                    "<class 'int'>",
+                    "<class 'float'>",
+                    "10"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Operator perbandingan untuk 'tidak sama dengan' adalah...",
+                "options": [
+                    "==",
+                    "=>",
+                    "!=",
+                    "<>"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Apa hasil dari 10 > 5 and 3 < 1?",
+                "options": [
+                    "True",
+                    "False",
+                    "None",
+                    "Error"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Struktur if-elif-else digunakan untuk...",
+                "options": [
+                    "Satu kondisi saja",
+                    "Banyak kondisi alternatif",
+                    "Perulangan",
+                    "Menghapus data"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Keyword apa yang digunakan di akhir 'match case' sebagai default?",
+                "options": [
+                    "else",
+                    "default",
+                    "case _",
+                    "break"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Apa kegunaan indentasi pada struktur if?",
+                "options": [
+                    "Hiasan",
+                    "Menentukan blok kode",
+                    "Mempercepat program",
+                    "Opsional"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Fungsi range(5) akan menghasilkan urutan angka...",
+                "options": [
+                    "1, 2, 3, 4, 5",
+                    "0, 1, 2, 3, 4, 5",
+                    "0, 1, 2, 3, 4",
+                    "1, 3, 5"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Keyword untuk menghentikan loop secara paksa adalah...",
+                "options": [
+                    "stop",
+                    "exit",
+                    "break",
+                    "continue"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Apa bedanya while loop dengan for loop?",
+                "options": [
+                    "While berdasarkan kondisi, For biasanya koleksi/range",
+                    "For lebih cepat",
+                    "While hanya untuk angka",
+                    "Tidak ada bedanya"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "question": "Try-Except digunakan untuk...",
+                "options": [
+                    "Membuat loop",
+                    "Menangani error/exception",
+                    "Mendeklarasikan fungsi",
+                    "Mempercepat eksekusi"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Keyword 'continue' berfungsi untuk...",
+                "options": [
+                    "Berhenti total",
+                    "Lanjut ke iterasi berikutnya",
+                    "Keluar dari fungsi",
+                    "Mencetak data"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Keyword untuk mendefinisikan fungsi adalah...",
+                "options": [
+                    "function",
+                    "def",
+                    "func",
+                    "define"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Apa itu parameter opsional (default parameter)?",
+                "options": [
+                    "Parameter yang wajib diisi",
+                    "Parameter yang punya nilai awal jika tidak diisi",
+                    "Parameter untuk loop",
+                    "Parameter rahasia"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "question": "Bagaimana cara memanggil fungsi bernama 'halo'?",
+                "options": [
+                    "halo",
+                    "call halo",
+                    "halo()",
+                    "def halo"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "question": "Keyword untuk mengembalikan nilai dari fungsi adalah...",
+                "options": [
+                    "back",
+                    "give",
+                    "result",
+                    "return"
+                ],
+                "correctOptionIndex": 3
+            },
+            {
+                "question": "Apa yang dimaksud dengan Rekursi?",
+                "options": [
+                    "Fungsi yang memanggil fungsi lain",
+                    "Fungsi yang memanggil dirinya sendiri",
+                    "Loop yang tidak berhenti",
+                    "Parameter yang salah"
+                ],
+                "correctOptionIndex": 1
+            }
+        ],
+        "subChapters": [
+            {
+                "id": "cs2102_1",
+                "title": "Module 1: Intro to Python",
+                "pdfPath": "assets/modules/peng_pemrograman_modul_1.pdf",
+                "content": "# Intro to Python\nPython adalah bahasa pemrograman populer yang mudah dipelajari. Fokus pada readability.\n\n### Variabel & Tipe Data\n- `int`: Angka bulat\n- `float`: Angka desimal\n- `str`: Teks\n- `bool`: True/False\n\n### Input & Output\n- `print()`: Menampilkan data\n- `input()`: Mengambil data dari user",
+                "quizQuestions": [
+                    {
+                        "question": "Tipe data mana yang digunakan untuk teks 'Halo Dunia'?",
+                        "options": [
+                            "int",
+                            "float",
+                            "str",
+                            "bool"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Bagaimana variabel dideklarasikan di Python?",
+                        "options": [
+                            "Variable x = 1",
+                            "x = 1",
+                            "int x = 1",
+                            "def x = 1"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Output dari print(2 * 3) adalah...",
+                        "options": [
+                            "5",
+                            "6",
+                            "23",
+                            "Error"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Fungsi untuk menerima input teks adalah...",
+                        "options": [
+                            "get()",
+                            "scan()",
+                            "input()",
+                            "read()"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Keyword Python untuk nilai kebenaran adalah...",
+                        "options": [
+                            "true/false",
+                            "True/False",
+                            "Yes/No",
+                            "1/0"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Operator % (modulo) digunakan untuk...",
+                        "options": [
+                            "Persentase",
+                            "Sisa bagi",
+                            "Perkalian",
+                            "Pembagian bulat"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Mana yang merupakan identifier yang valid?",
+                        "options": [
+                            "2_data",
+                            "data-2",
+                            "_data2",
+                            "data 2"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Simbol pembagian yang menghasilkan float adalah...",
+                        "options": [
+                            "/",
+                            "//",
+                            "%",
+                            "\\"
+                        ],
+                        "correctOptionIndex": 0
+                    },
+                    {
+                        "question": "Hasil dari print(int(3.7)) adalah...",
+                        "options": [
+                            "3",
+                            "4",
+                            "3.7",
+                            "Error"
+                        ],
+                        "correctOptionIndex": 0
+                    },
+                    {
+                        "question": "Python dikembangkan oleh...",
+                        "options": [
+                            "Steve Jobs",
+                            "Guido van Rossum",
+                            "Bill Gates",
+                            "Mark Zuckerberg"
+                        ],
+                        "correctOptionIndex": 1
+                    }
+                ]
+            },
+            {
+                "id": "cs2102_2",
+                "title": "Module 2: Conditional Statement",
+                "pdfPath": "assets/modules/peng_pemrograman_modul_2.pdf",
+                "content": "# Conditional Statement\nKontrol alur program berdasarkan kondisi.\n\n### If-Else\n```python\nif x > 10:\n    print('Besar')\nelse:\n    print('Kecil')\n```\n\n### Match Case (Python 3.10+)\nMirip switch-case di bahasa lain.",
+                "quizQuestions": [
+                    {
+                        "question": "Operator untuk mengecek kesamaan nilai adalah...",
+                        "options": [
+                            "=",
+                            "==",
+                            "is",
+                            "!="
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Keyword untuk kondisi alternatif setelah 'if' adalah...",
+                        "options": [
+                            "else if",
+                            "elif",
+                            "elsif",
+                            "other"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa hasil dari not (5 == 5)?",
+                        "options": [
+                            "True",
+                            "False",
+                            "None",
+                            "Error"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Indentasi di bawah 'if' menandakan...",
+                        "options": [
+                            "Header",
+                            "Blok kode yang dijalankan jika True",
+                            "Komentar",
+                            "Instruksi selanjutnya"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Manakah operator logika di Python?",
+                        "options": [
+                            "&&",
+                            "||",
+                            "and",
+                            "xor"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Output dari print(10 > 5 or 5 > 10)?",
+                        "options": [
+                            "True",
+                            "False",
+                            "None",
+                            "Error"
+                        ],
+                        "correctOptionIndex": 0
+                    },
+                    {
+                        "question": "Struktur 'match case' diperkenalkan pada versi Python...",
+                        "options": [
+                            "2.7",
+                            "3.6",
+                            "3.10",
+                            "3.8"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Apa gunanya keyword 'else'?",
+                        "options": [
+                            "Kondisi utama",
+                            "Dijalankan jika if/elif bernilai False",
+                            "Mengulang kode",
+                            "Mengakhiri program"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Simbol akhir pada baris 'if x > 5' adalah...",
+                        "options": [
+                            ";",
+                            ".",
+                            ":",
+                            "{"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Jika x = 7, apa hasil dari: if x < 5: print('A') elif x < 10: print('B') else: print('C')?",
+                        "options": [
+                            "A",
+                            "B",
+                            "C",
+                            "None"
+                        ],
+                        "correctOptionIndex": 1
+                    }
+                ]
+            },
+            {
+                "id": "cs2102_3",
+                "title": "Module 3: Looping & Exceptions",
+                "pdfPath": "assets/modules/peng_pemrograman_modul_3.pdf",
+                "content": "# Looping & Exceptions\nMelakukan tugas berulang dan menangani error.\n\n### For & While\n- `for`: Iterasi pada koleksi/range.\n- `while`: Selama kondisi True.\n\n### Keywords\n- `break`: Berhenti paksa.\n- `continue`: Lewati sisa loop saat ini.\n\n### Try-Except\nMenghindari program crash saat error.",
+                "quizQuestions": [
+                    {
+                        "question": "Fungsi range(2, 5) menghasilkan...",
+                        "options": [
+                            "2, 3, 4, 5",
+                            "2, 3, 4",
+                            "2, 4",
+                            "0, 1, 2, 3, 4"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Apa yang terjadi jika kondisi while selalu True?",
+                        "options": [
+                            "Error",
+                            "Loop berhenti sendiri",
+                            "Infinite loop (loop selamanya)",
+                            "Program melambat"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Keyword untuk menangkap error agar program tidak crash adalah...",
+                        "options": [
+                            "catch",
+                            "try",
+                            "except",
+                            "error"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Nested loop adalah...",
+                        "options": [
+                            "Loop yang sangat cepat",
+                            "Loop di dalam loop",
+                            "Loop yang salah",
+                            "Loop tanpa akhir"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Output dari: for i in range(3): print(i, end='')?",
+                        "options": [
+                            "012",
+                            "123",
+                            "0123",
+                            "333"
+                        ],
+                        "correctOptionIndex": 0
+                    },
+                    {
+                        "question": "Kapan blok 'finally' pada try-except dijalankan?",
+                        "options": [
+                            "Hanya jika ada error",
+                            "Hanya jika tidak ada error",
+                            "Selalu dijalankan",
+                            "Tidak pernah"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Manakah cara menghentikan loop?",
+                        "options": [
+                            "exit",
+                            "stop",
+                            "break",
+                            "return"
+                        ],
+                        "correctOptionIndex": 2
+                    },
+                    {
+                        "question": "Continue digunakan untuk...",
+                        "options": [
+                            "Selesai loop",
+                            "Pindah ke iterasi berikutnya",
+                            "Keluar fungsi",
+                            "Mencetak log"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "While x < 5: x += 1. Jika x mulai dari 0, berapa kali loop berjalan?",
+                        "options": [
+                            "4 kali",
+                            "5 kali",
+                            "6 kali",
+                            "Selamanya"
+                        ],
+                        "correctOptionIndex": 1
+                    },
+                    {
+                        "question": "Exception 'ValueError' biasanya terjadi saat...",
+                        "options": [
+                            "Salah nama variabel",
+                            "Tipe data tidak sesuai saat konversi",
+                            "Loop terlalu lama",
+                            "File tidak ada"
+                        ],
+                        "correctOptionIndex": 1
+                    }
+                ]
+            },
+            {
+                "id": "cs2102_4",
                 "title": "Module 4: Functions & Recursion",
                 "pdfPath": "assets/modules/peng_pemrograman_modul_4.pdf",
                 "content": "# Functions & Recursion\nModularisasi kode untuk digunakan kembali.\n\n### Definisi Fungsi\n```python\ndef sapa(nama):\n    print('Halo ' + nama)\n```\n\n### Parameter\n- Wajib: Harus diisi.\n- Opsional: Punya default value.\n\n### Rekursi\nFungsi memanggil dirinya sendiri.",
